@@ -17,7 +17,7 @@ resource "aws_ecs_task_definition" "time_ip_task" {
   container_definitions = jsonencode([
     {
       name      = "time-ip-app"
-      image     = "mridulbadgurjar4/time-ip-image:latest"
+      image     = "mridulbadgurjar4/time-ip-image"
       essential = true
       portMappings = [
         {
